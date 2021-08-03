@@ -7,12 +7,12 @@ const customStyle = {
   color: "red"
 };
 
-if (today.getHours() < 12 && today.getHours() >= 0) {
+if (today.getHours() < 12) {
   heading = "Good Morning";
-} else if (today.getHours() >= 12 && today.getHours() < 18) {
+} else if (today.getHours() < 18) {
   heading = "Good Afternoon";
   customStyle.color = "green";
-} else if (today.getHours() >= 18 && today.getHours() < 24) {
+} else if (today.getHours() < 24) {
   heading = "Good Evening";
   customStyle.color = "blue";
 }
